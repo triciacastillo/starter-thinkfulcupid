@@ -144,5 +144,54 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (min-width: 800px) {
-  
+  .logo {
+    font-size: 40px;
+  }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+header nav ul {
+  padding-bottom: 30px;
+}
+
+.logo {
+  padding-top: 15px;
+}
+
+.group {
+  flex-direction: row;
+}
+
+.item-form,
+.item-paragraph,
+.item-download {
+  align-self: center;
+}
+
+form input {
+  width: 30%;
+}
+
+.item {
+  flex: 1;
+}
+
+.item-double {
+  flex: 2;
+}
+
+.blog-group,
+.about-group {
+  flex-wrap: wrap;
+} 
+
+.item-blog {
+  flex: 1 0 33%;
+}
+
 }
