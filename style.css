@@ -146,45 +146,63 @@ footer p {
   padding: 20px;
 }
 
-/* ------- Media Query 480 ---- */ 
+/* ------- Media Query 480 - Mobile first---- */ 
 @media all and (min-width: 480px) {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    align-items: center;
+    padding: 0px 20px;
+    flex-direction: column;
   }
 
-.logo { 
-  font-size: 48px; 
-  justify-content: flex-start; 
-  } 
+  .group {
+    flex-direction: column;
+  }
 
-.group {
-  flex-direction: row;
+  .item {
+    flex: 1;
+  }
+
+  .item-double {
+    flex: 2;
+  }
 }
 
-.item {
-  flex: 1;
-}
+/* ------- Media Query 800 - Half Screen on desktop---- */ 
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 
-.item-double {
-  flex: 2;
-}
+  div {
+    align-self: center;
+  }
 
-.blog-group {
-  flex-wrap: wrap;
-}
+  .group {
+    flex-direction: row;
+  }
 
-.item-blog {
-  flex: 2 0 33%;
-}
+  .item {
+    flex: 1;
+  }
 
-.item-form,
-.item-download,
-.item-paragraph {
-  align-self: center;
-}
+  .item-double {
+    flex: 2;
+  }
 
-}
+  .blog-group {
+    flex-wrap: wrap;
+  }
 
+  .item-blog {
+    flex: 2 0 33%;
+  }
+
+  .item-download,
+  .item-paragraph {
+    align-self: center;
+  }
+}
