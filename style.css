@@ -159,15 +159,32 @@ footer p {
   font-size: 48px; 
   justify-content: flex-start; 
   } 
+
+.group {
+  flex-direction: row;
 }
 
-/* -------  Media Query ------- */
-@media all and (min-width: 800px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .group { 
-    flex-direction: row; 
-  } 
+.item {
+  flex: 1;
 }
+
+.item-double {
+  flex: 2;
+}
+
+.blog-group {
+  flex-wrap: wrap;
+}
+
+.item-blog {
+  flex: 2 0 33%;
+}
+
+.item-form,
+.item-download,
+.item-paragraph {
+  align-self: center;
+}
+
+}
+
